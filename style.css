@@ -21,6 +21,17 @@
     height: 37rem;
     width: 50rem;
     display: flex;
+    animation: show-cadastro 1s forwards;
+    opacity: 0;
+}
+@keyframes show-cadastro{
+    0%{
+        transform: translate(-80rem, -50%);
+    }
+    100%{
+        transform: translate(1);
+        opacity: 1;
+    }
 }
 .login{
     color: grey;
