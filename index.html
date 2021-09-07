@@ -14,21 +14,26 @@
             </div>
             <div class="right">
                 <form class="right-content" action="#">
-                    <div class="login">
-                        <p>Já fez uma conta? <a href="#">Login</a></p>
-                    </div>
                     <div class="tittle-login">
                         <h1>Crie sua conta</h1>
                     </div>
                     <div class="inputs">
-                        <input type="text" placeholder="Nome...">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
                     </div>
                     <div class="inputs">
-                        <input type="email" placeholder="E-mail...">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
                     </div>
                     <div class="senha-confirmar">
-                        <input type="password" id="senha" placeholder="Senha...">
-                        <input type="password" id="confirmar" placeholder="Confirmar...">
+                        <div class="senha">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha">
+                        </div>
+                        <div class="confirmar">
+                            <label for="confirmar">Confirmar</label>
+                            <input type="password" id="confirmar">
+                        </div>
                     </div>
                     <div class="termos-de-uso">
                         <input type="checkbox" name="" id="termo">
@@ -43,6 +48,9 @@
                             <button id="google"><i class="fab fa-google"></i>Continue com Google</button>
                             <button id="facebook"><i class="fab fa-facebook"></i>Continue com Facebook</button>
                         </div>
+                    </div>
+                    <div class="login">
+                        <p>Já fez uma conta? <a href="#">Login</a></p>
                     </div>
                 </form>
             </div>

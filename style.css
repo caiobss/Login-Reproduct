@@ -4,11 +4,13 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
+    /*Reset da página*/
 }
 .background-login{
     height: 100vh;
     width: 100%;
     background-color: rgb(214, 233, 255);
+    /*Estilização e tamanho do background da pagina*/
 }
 .cadastro{
     background-color: white;
@@ -23,6 +25,8 @@
     display: flex;
     animation: show-cadastro 1s forwards;
     opacity: 0;
+    /*Estilização da base da aba de cadastro, com posicionamento do elemento e animação */
+
 }
 @keyframes show-cadastro{
     0%{
@@ -31,22 +35,23 @@
     100%{
         transform: translate(1);
         opacity: 1;
-    }
+    }/*Animação de exibição da aba de cadastro*/
 }
 .login{
     color: grey;
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    margin-right: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    /*Texto guia para usuários com conta registrada*/
 }
 .login p{
     font-size: 0.9rem;
+    /*Texto guia para usuários com conta registrada*/
 }
 .login a{
     color: rgb(79, 102, 231) ;
     font-size: 1rem;
     font-weight: 600;
+    /*Texto guia para usuários com conta registrada*/
 }
 .left{
     background-image: url(/eberhard-grossgasteiger-jCL98LGaeoE-unsplash.jpg);
@@ -63,7 +68,6 @@
     align-items: center;
 }
 .right-content{
-    margin-top: 2rem;
     max-width: 19rem ;
     max-height: 50rem;
 }
@@ -77,7 +81,7 @@
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
-    margin: 1rem 0;
+    margin: .6rem 0;
     height: 2.2rem;
     width: 100%;
     outline: none;
@@ -86,6 +90,9 @@
 }
 .right-content input:hover{
     background-color: rgb(218, 218, 218);
+}
+.right-content label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .senha-confirmar{
     display: flex;
@@ -103,17 +110,20 @@
     font-size: .9rem;
 }
 .confirmar button{
-    background-color: rgb(79, 102, 231);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8dc540;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1rem;
     color: white;
     border: none;
     border-radius: 8px;
     width: 100%;
     height: 2.3rem;
     transition: 0.3s;
+    margin-top: 1rem;
 }
 .confirmar button:hover{
-    background-color: rgb(63, 80, 177);
+    background-color: #678f2f;
 }
 .login-social-midia{
     margin-top: 1rem;
