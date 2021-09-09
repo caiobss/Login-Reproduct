@@ -167,6 +167,7 @@
 }
 @media (max-width:999px){
     .cadastro{
+        overflow: scroll;
         position: fixed;
         width: 30rem;
         height: 52rem;
