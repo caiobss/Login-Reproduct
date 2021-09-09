@@ -1,5 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Cantarell&display=swap);
+/*Fonte do cadastro e cdn do Font Awesome para a utilização dos icones*/
 *{
     margin: 0%;
     padding: 0%;
@@ -15,6 +16,7 @@
     /*Estilização e tamanho do background da pagina*/
 }
 .cadastro{
+    overflow-x: hidden;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 2rem 1rem rgba(39, 59, 80, 0.103);
@@ -27,7 +29,7 @@
     display: flex;
     animation: show-cadastro 1s forwards;
     opacity: 0;
-    /*Estilização da base da aba de cadastro, com posicionamento do elemento e animação */
+    /*Estilização da base da aba de cadastro e seu tamanho, com posicionamento do elemento e animação */
 
 }
 @keyframes show-cadastro{
@@ -61,6 +63,7 @@
     border-radius: 25px 0 0 25px;
     height: 100%;
     width: 45%;
+    /*Estilizando tamanho que a div left vai ocupar da div pai (cadastro)*/
 }
 .right{
     height: 100%;
@@ -68,13 +71,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*Estilização do tamanho da div right que vai ocupar a div pai (cadastro), e posicionamento do conteudo do right no centro dele*/
 }
 .right-content{
     max-width: 19rem ;
+    /*As divs filhas da div right-content possui essa configuração de largura maxima*/
 }
 .tittle-login{
     font-size: .9rem;
     margin-bottom: 1rem;
+    /*tamanho e margem inferior do titulo "crie sua conta"*/
 }
 .right-content input{
     background-color: rgb(231, 231, 231);
@@ -88,24 +94,30 @@
     outline: none;
     transition: 0.3s;
     padding-left: 1rem ;
+    /*estilização de todos os inputs*/
 }
 .right-content input:hover{
     background-color: rgb(218, 218, 218);
+    /*mudança de cor do background do input*/
 }
 .senha-confirmar{
     display: flex;
     column-gap: 1rem;
+    /*Responsável por deixar o input senha e confirmar um do lado do outro*/
 }
 .termos-de-uso{
     display: flex;
     align-items: center;
+    /*Centralização e posicionamento dos termos de uso*/
 }
 .termos-de-uso input{
     width: 1rem;
+    /*tamanho da checkbox da div pai (termos-de-uso)*/
 }
 .termos-de-uso p{
     margin-left: .5rem;
     font-size: .9rem;
+    /*Tamanho da fonte do p do termo de uso*/
 }
 .confirmar button{
     background-color: #8dc540;
@@ -118,9 +130,11 @@
     height: 2.3rem;
     transition: 0.3s;
     margin-top: 1rem;
+    /*Botão de criar conta da pagina*/
 }
 .confirmar button:hover{
     background-color: #678f2f;
+    /*mudança de background do botão*/
 }
 .login-social-midia{
     margin-top: 1rem;
@@ -128,6 +142,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*Centralização dos botões dentro dessa div*/
 }
 .login-social-midia button{
     background-color: white;
@@ -138,13 +153,48 @@
     margin-top: 1rem;
     width: 100%;
     transition: 0.3s;
+    /*Estilização dos butões que são filhos da div pai (login-social-midia*/
 }
 .login-social-midia button:hover{
     background-color: rgb(216, 216, 216);
+    /*mudança de background do botão*/
 }
 .social-midia-txt i{
     color: rgb(88, 88, 180);
     font-size: 1.1rem;
     position: absolute;
     left: 28.5rem;
+    /*Posicionamento e estilização dos icones do "login-social-midia"*/
+}
+@media (max-width:999px){
+    .cadastro{
+        position: fixed;
+        overflow-x: hidden;
+        width: 30rem;
+        height: 52rem;
+        display: flex;
+        justify-content: center;
+        animation: show-mobile-login 1s forwards;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 20rem;
+    }
+    .right-content{
+        max-width: 100%;
+    }
+    .social-midia-txt i{
+        left: 6.8rem;
+    }
+    @keyframes show-mobile-login{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    /*Transformação responsiva para acesso de dispositivos com telas menores*/
 }
