@@ -167,7 +167,6 @@
 }
 @media (max-width:999px){
     .cadastro{
-        overflow: scroll;
         position: fixed;
         width: 30rem;
         height: 52rem;
@@ -181,6 +180,7 @@
     .right{
         margin-top: 3rem;
         width: 18rem;
+        height: 100%;
     }
     .right-content{
         max-width: 100%;
