@@ -178,7 +178,8 @@
         display: none;
     }
     .right{
-        width: 20rem;
+        margin-top: 3rem;
+        width: 18rem;
     }
     .right-content{
         max-width: 100%;
