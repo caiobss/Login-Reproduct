@@ -16,7 +16,6 @@
     /*Estilização e tamanho do background da pagina*/
 }
 .cadastro{
-    overflow-x: hidden;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 2rem 1rem rgba(39, 59, 80, 0.103);
