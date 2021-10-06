@@ -6,7 +6,7 @@
   margin: 0%;
   padding: 0%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   font-family: 'Cantarell', sans-serif;
   /*Reset da página*/
@@ -23,19 +23,19 @@
   background-color: white;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 2rem 1rem rgba(59, 59, 59, 0.151);
-          box-shadow: 0 0 2rem 1rem rgba(59, 59, 59, 0.151);
+  box-shadow: 0 0 2rem 1rem rgba(59, 59, 59, 0.151);
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 38rem;
   width: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-animation: show-cadastro 1s forwards;
-          animation: show-cadastro 1s forwards;
+  animation: show-cadastro 1s forwards;
   opacity: 0;
   /*Estilização da base da aba de cadastro e seu tamanho, com posicionamento do elemento e animação */
 }
@@ -43,11 +43,11 @@
 @-webkit-keyframes show-cadastro {
   0% {
     -webkit-transform: translate(-80rem, -50%);
-            transform: translate(-80rem, -50%);
+    transform: translate(-80rem, -50%);
   }
   100% {
     -webkit-transform: translate(1);
-            transform: translate(1);
+    transform: translate(1);
     opacity: 1;
   }
   /*Animação de exibição da aba de cadastro*/
@@ -56,11 +56,11 @@
 @keyframes show-cadastro {
   0% {
     -webkit-transform: translate(-80rem, -50%);
-            transform: translate(-80rem, -50%);
+    transform: translate(-80rem, -50%);
   }
   100% {
     -webkit-transform: translate(1);
-            transform: translate(1);
+    transform: translate(1);
     opacity: 1;
   }
   /*Animação de exibição da aba de cadastro*/
@@ -101,11 +101,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   /*Estilização do tamanho da div right que vai ocupar a div pai (cadastro), e posicionamento do conteudo do right no centro dele*/
 }
 
@@ -146,7 +146,7 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+  column-gap: 1rem;
   /*Responsável por deixar o input senha e confirmar um do lado do outro*/
 }
 
@@ -155,8 +155,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   /*Centralização e posicionamento dos termos de uso*/
 }
 
@@ -198,14 +198,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   /*Centralização dos botões dentro dessa div*/
 }
 
@@ -245,10 +245,10 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-animation: show-mobile-login 1s forwards;
-            animation: show-mobile-login 1s forwards;
+    animation: show-mobile-login 1s forwards;
   }
   .left {
     display: none;
